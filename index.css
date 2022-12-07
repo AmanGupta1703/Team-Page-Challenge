@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #FAFAFA;
+}
+
+img {
+    display: block;
+    width: 150px;
+    object-fit: cover;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.main-heading,
+.main-subheading,       
+.main-text,
+.name,
+.role {
+    color: #000000;
+    margin: 0;
+}
+
+.main-heading,
+.role {
+    font-family: 'PT Serif', serif;
+}
+
+.main-text,
+.name {
+    font-size: 0.875rem;
+}
+
+.name, 
+.role {
+    margin: 0;
+}
+
+/*
+    ===================
+        MAIN SECTION
+    ===================
+
+*/
+
+.main-content {
+    padding: 4.4375em 1.875em 0 0.75em; 
+}
+
+.main-heading {
+    font-size: 2.25rem;     /* 36px */
+    font-family: 'PT Serif', serif;
+    margin-bottom: 1.0556em; 
+}
+
+.main-subheading {
+    font-size: 1.125rem;    /* 18px */
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.556em;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 0.875rem;    /* 14px */
+    line-height: 1.5;       
+}
+
+
+/*
+    ===================
+        TEAM SECTION
+    ===================
+
+*/
+
+.team-info-section {
+    margin-top: 4em;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22.2px;
+    position: relative;
+}
+
+.box {
+    position: relative;
+    margin-right: 8px;
+}
+
+.team-card {
+    display: flex;
+}
+
+.team-card-down {
+    transform: translateY(66px);
+}
+
+.name {
+    margin-top: 0.714em;
+    font-weight: 600;
+}
+
+.role {
+    font-weight: 400;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    transform: rotate(90deg);
+    transform-origin: 1em 1em;
+}
+
+/*
+    ===================
+        FOOTER SECTION
+    ===================
+
+*/
+
+.footer {
+    color: #A9A9A9;
+    text-align: center;
+    margin: 8.375em 0 0 0;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+}
+
+.profile-link {
+    color: inherit;
+}
+
+.profile-link:hover,
+.profile-link:focus {
+    color: #000000;
+}
+
+
+@media (min-width: 786px) {
+    .intro-section,
+    .team-info-section {
+        display: flex;
+        align-items: center;
+    }
+    
+    .intro-section { 
+        justify-content: center;
+        gap: 13.4375em;
+        padding: 0 ;
+    }
+    
+    .main-text {
+        width: 20em
+    }
+    
+    .team-info-section {
+        justify-content: center;
+    }
+    
+    .wrapper {
+        gap: 1.875em;
+        width: 59%;
+    }
+    
+    .team-card-down-mobile {
+        transform: translateY(120px);
+    }
+    
+    .footer {
+        margin-top: 7.1875em;
+    }
+}
